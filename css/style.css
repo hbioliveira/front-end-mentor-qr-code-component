@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --attribution: hsl(228, 45%, 44%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 20px;
+    box-shadow: 0 1px 100px 10px rgb(206, 205, 205);
+    width: 320px;
+}
+
+.qr-code {
+    border-radius: 30px;
+    padding: 20px;
+    width: auto;
+}
+
+.box h1 {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    padding: 0 25px;
+    margin-bottom: 20px;
+}
+.box p {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    text-align: center;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    margin-top: 20px;
+}
+
+.attribution a { 
+    color: var(--attribution); 
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 375px) {
+
+}
